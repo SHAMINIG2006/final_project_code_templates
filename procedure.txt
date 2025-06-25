@@ -8,6 +8,15 @@ CMD:
 venv\Scripts\activate.bat
 Install dependencies:
 pip install flask pandas scikit-learn joblib numpy
+Open Anaconda Prompt as Administrator before running these commands.
+pip install numpy
+pip install pandas
+pip install scikit-learn
+pip install matplotlib
+pip install scipy
+pip install pickle-mixin
+pip install seaborn
+pip install Flask
 Train your model:
 python train_model.py
 Run the web app:
