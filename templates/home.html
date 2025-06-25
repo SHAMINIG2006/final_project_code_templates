@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Payments Fraud Detection</title>
+</head>
+<body>
+    <h1>Online Payments Fraud Detection</h1>
+    <form action="/predict" method="post">
+        <input type="number" name="step" placeholder="Step" required><br>
+
+        <label>Transaction Type:</label>
+        <select name="type" required>
+            <option value="TRANSFER">TRANSFER</option>
+            <option value="PAYMENT">PAYMENT</option>
+            <option value="CASH_OUT">CASH_OUT</option>
+            <option value="CASH_IN">CASH_IN</option>
+            <option value="DEBIT">DEBIT</option>
+        </select><br>
+
+        <input type="number" step="any" name="amount" placeholder="Amount" required><br>
+        <input type="number" step="any" name="oldbalanceOrg" placeholder="Old Balance Origin" required><br>
+        <input type="number" step="any" name="newbalanceOrig" placeholder="New Balance Origin" required><br>
+        <input type="number" step="any" name="oldbalanceDest" placeholder="Old Balance Destination" required><br>
+        <input type="number" step="any" name="newbalanceDest" placeholder="New Balance Destination" required><br>
+        <input type="number" name="isFlaggedFraud" placeholder="Is Flagged Fraud (0 or 1)" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
